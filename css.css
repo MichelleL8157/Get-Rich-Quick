@@ -1,0 +1,29 @@
+#headImg{
+    height: 250px;
+    width: 100%;
+    margin: auto;
+    display: block;
+}
+img{
+    height: 200px;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+h2, p{
+    text-align: center;
+}
+p{
+    margin-bottom: 30px;
+}
+.lotto{
+    grid-template-columns: repeat(5, 100px);
+}
