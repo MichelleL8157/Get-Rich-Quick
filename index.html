@@ -4,30 +4,39 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main Page</title>
+    <title>Get Rich Quick</title>
     <link rel="stylesheet" href="css.css" type="text/css">
+    <script src="js.js"></script>
 </head>
 <body>
     <div class="container">
-        <img src="pics/blue.png" id="headImg">
+        <img src="pics/bill.png" id="headImg">
         <div class="centered"><h1>Get Rich Quick</h1></div>
     </div>
-    <h2>Win Up to $1,000,000 in cash and prizes!</h2>
-    <p>Click the boxes to open the treasures. If all 5 treasures are found, you win!</p>
-    <div class="WANTED TREASURES">
-        
+    <h2 class="text">Get a chance to win the pirate bill! First of its kind!</h2>
+    <p class="text">Click the boxes to open the treasures. If all 5 treasures argh found, mail us the winner's code to receive the prize!</p>
+    <div class="list">
+        <img src="pics/coin.png" class="want">
+        <img src="pics/scope.png" class="want">
+        <img src="pics/hook.png" class="want">
+        <img src="pics/bird.png" class="want">
+        <img src="pics/pipe.png" class="want">
     </div>
     <div class="lotto">
-        <img src="pics/blue.png" onclick="this.src='pics/yellow.png'">
-        <img src="pics/blue.png" onclick="this.src='pics/yellow.png'">
-        <img src="pics/blue.png" onclick="this.src='pics/yellow.png'">
-        <img src="pics/blue.png" onclick="this.src='pics/yellow.png'">
-        <img src="pics/blue.png" onclick="this.src='pics/yellow.png'">
-        <img src="pics/blue.png" onclick="this.src='pics/yellow.png'">
-        <img src="pics/blue.png" onclick="this.src='pics/yellow.png'">
-        <img src="pics/blue.png" onclick="this.src='pics/yellow.png'">
-        <img src="pics/blue.png" onclick="this.src='pics/yellow.png'">
-        <img src="pics/blue.png" onclick="this.src='pics/yellow.png'">
+        <img src="pics/money.png" class="slot" onclick="this.src='pics/bandana.png'">
+        <img src="pics/money.png" class="slot" onclick="this.src='pics/moust.png'">
+        <img src="pics/money.png" class="slot" onclick="this.src='pics/cap.png'">
+        <img src="pics/money.png" class="slot" onclick="this.src='pics/pipe.png'">
+        <img src="pics/money.png" class="slot" onclick="this.src='pics/coin.png'">
+        <img src="pics/money.png" class="slot" onclick="this.src='pics/feather.png'">
+        <img src="pics/money.png" class="slot" onclick="this.src='pics/hook.png'">
+        <img src="pics/money.png" class="slot" onclick="this.src='pics/bird.png'">
+        <img src="pics/money.png" class="slot" onclick="this.src='pics/sword.png'">
     </div>
+    <p>If you're a fellow pirate, we'll help you... BUT you must answer this...</p>
+    <label for="text">What's our favorite number?</label>
+    <input type="text" id="text">
+    <button type="button" onclick="guessed()">Guess</button>
+    <p id="resp"></p>
     
 </body>
