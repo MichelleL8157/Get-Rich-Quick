@@ -1,3 +1,4 @@
+<!--Michelle Liu, Pd. 7-8, Final Project-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,12 +10,15 @@
     <script src="js.js"></script>
 </head>
 <body>
+    <!--Banner with title:-->
     <div class="container">
         <img src="pics/bill.png" id="headImg">
         <div class="centered"><h1>Get Rich Quick</h1></div>
     </div>
+    <!--Instructions to user:-->
     <h2 class="text">Get a chance to win the pirate bill! First of its kind!</h2>
     <p class="text">Click the boxes to open the treasures. If all 5 treasures argh found, mail us the winner's code to receive the prize!</p>
+    <!--Treasure Box: all 5 images need to be in the slot machine below to win.-->
     <div class="list">
         <img src="pics/coin.png" class="want">
         <img src="pics/scope.png" class="want">
@@ -22,6 +26,7 @@
         <img src="pics/bird.png" class="want">
         <img src="pics/pipe.png" class="want">
     </div>
+    <!--Slot Machine: User clicks on all images to reveal if the treasure is underneath it.-->
     <div class="lotto">
         <img src="pics/money.png" class="slot" onclick="this.src='pics/bandana.png'">
         <img src="pics/money.png" class="slot" onclick="this.src='pics/moust.png'">
@@ -33,10 +38,10 @@
         <img src="pics/money.png" class="slot" onclick="this.src='pics/bird.png'">
         <img src="pics/money.png" class="slot" onclick="this.src='pics/sword.png'">
     </div>
+    <!--Hint!!! Something is wrong with the website but can be solved with this...-->
     <p>If you're a fellow pirate, we'll help you... BUT you must answer this...</p>
     <label for="text">What's our favorite number?</label>
     <input type="text" id="text">
     <button type="button" onclick="guessed()">Guess</button>
     <p id="resp"></p>
-    
 </body>
